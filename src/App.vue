@@ -9,24 +9,47 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #939393;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.75;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: red;
+  color: #939393;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 0.91;
+}
+
+// #nav {
+//   padding: 30px;
+
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
 </style>
