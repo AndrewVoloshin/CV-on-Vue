@@ -1,5 +1,7 @@
 <template>
   <div class="header">
+    <div class="header__bg"></div>
+
     <div class="cv__container">
       <div class="cv__content">
         <header>
@@ -25,7 +27,6 @@
                           class="header__link"
                           target="blank"
                         >
-                          <!-- <i class="fa-brands fa-github fa-2x"></i> -->
                           <font-awesome-icon icon="fa-brands fa-github" />
                         </a>
                       </li>
@@ -156,9 +157,18 @@ header__subinfo h2 {
 }
 
 @media screen and (min-width: 1024px) {
+  .header__bg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #f8bb10;
+    z-index: 1;
+  }
   .cv__content {
     max-width: 1276px;
     padding: 0;
+    position: relative;
+    z-index: 2;
   }
 
   .header__top {
@@ -168,7 +178,11 @@ header__subinfo h2 {
   }
   .header__photo-wrap {
     width: 30%;
+    height: 100vh;
     padding: 0 49px;
+    display: flex;
+    align-items: center;
+    background-color: #fbfbfb;
   }
   .header__photo {
     flex: 0 0 auto;
