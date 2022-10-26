@@ -161,14 +161,15 @@ header__subinfo h2 {
     position: absolute;
     width: 50%;
     height: 100%;
-    background: #f8bb10;
+    background: #fbfbfb;
     z-index: 1;
   }
   .cv__content {
+    position: relative;
     max-width: 1276px;
     padding: 0;
-    position: relative;
     z-index: 2;
+    background: white;
   }
 
   .header__top {
@@ -181,7 +182,7 @@ header__subinfo h2 {
     height: 100vh;
     padding: 0 49px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     background-color: #fbfbfb;
   }
   .header__photo {
