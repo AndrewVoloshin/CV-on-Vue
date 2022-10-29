@@ -40,6 +40,13 @@ h1 {
   line-height: 0.91;
 }
 
+h2 {
+  color: #727272;
+  font-size: 17px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
 // #nav {
 //   padding: 30px;
 

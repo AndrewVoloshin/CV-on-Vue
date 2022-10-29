@@ -180,7 +180,7 @@ header__subinfo h2 {
   .header__photo-wrap {
     width: 30%;
     height: 100vh;
-    padding: 0 49px;
+    padding: 0 3.05rem;
     display: flex;
     justify-content: center;
     background-color: #fbfbfb;
@@ -191,7 +191,7 @@ header__subinfo h2 {
 
   .header__content-wrap {
     width: 70%;
-    padding: 24px 49px 20px;
+    padding: 3.05rem 3.05rem 1.6rem;
     height: 100vh;
   }
 
@@ -227,10 +227,10 @@ header__subinfo h2 {
     height: auto;
   }
   .header__photo-wrap {
-    padding: 0 74px;
+    padding: 0 4.6rem;
   }
   .header__content-wrap {
-    padding: 24px 74px;
+    padding: 3rem 4.6rem 1.6rem;
   }
   .header__info h1 {
     font-size: 67px;
