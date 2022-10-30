@@ -60,10 +60,10 @@ export default {};
 
 @media screen and (min-width: 760px) {
   .intro__content {
-    padding: 3.05rem;
+    padding: 2.75rem 3.05rem;
   }
   .intro__text {
-    padding: 3.05rem;
+    padding: 2.75rem 3.05rem;
   }
   @media screen and (min-width: 1024px) {
     .intro__bg-left {

@@ -148,7 +148,7 @@ header__subinfo h2 {
 
 @media screen and (min-width: 760px) {
   .cv__content {
-    padding: 3.05em;
+    padding: 3.05em 3.05em 1.1rem;
   }
   .header__photo img {
     width: 196px;
