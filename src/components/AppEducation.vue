@@ -1,20 +1,20 @@
 <template>
-  <div class="experience">
-    <div class="experience__bg-left"></div>
-    <div class="experience__bg-right"></div>
-    <div class="experience__container">
-      <div class="experience__title">
-        <h2>experience</h2>
+  <div class="education">
+    <div class="education__bg-left"></div>
+    <div class="education__bg-right"></div>
+    <div class="education__container">
+      <div class="education__title">
+        <h2>education</h2>
         <p>What I am all about</p>
       </div>
-      <div class="experience__content">
-        <div class="experience__timeline">
+      <div class="education__content">
+        <div class="education__timeline">
           <app-timeline
             :item="item"
-            v-for="item in experience"
+            v-for="item in education"
             :key="item"
           ></app-timeline>
-          <!-- <div class="content__end"></div> -->
+          <div class="content__end"></div>
         </div>
       </div>
     </div>
@@ -22,43 +22,43 @@
 </template>
 
 <script>
-import { experience } from "@/assets/experience.js";
+import { education } from "@/assets/experience.js";
 import AppTimeline from "./AppTimeline.vue";
 
 export default {
   components: { AppTimeline },
   data() {
     return {
-      experience: experience,
+      education: education,
     };
   },
 };
 </script>
 
 <style land="scss" scoped>
-.experience {
+.education {
   display: flex;
   justify-content: center;
   position: relative;
 }
-.experience__container {
+.education__container {
   width: 100%;
 }
 
-.experience__title {
+.education__title {
   padding: 1.5rem;
   background: #fafafa;
   border-top: solid 1px rgb(237, 237, 237);
   border-bottom: solid 1px rgb(237, 237, 237);
 }
 
-.experience__title h2 {
+.education__title h2 {
   margin-bottom: 7px;
 }
-.experience__content {
+.education__content {
   padding: 1.5rem 0 0 1.5rem;
 }
-.experience__timeline {
+.education__timeline {
   position: relative;
 }
 .content__end {
@@ -73,26 +73,26 @@ export default {
 .item__title {
 }
 
-.experience__text {
+.education__text {
 }
 
 @media screen and (min-width: 600px) {
-  .experience__content {
+  .education__content {
     /* font-size: 17px; */
   }
 }
 
 @media screen and (min-width: 760px) {
-  .experience__title {
+  .education__title {
     padding: 2.75rem 3.05rem;
   }
-  .experience__content {
+  .education__content {
     padding: 2.75rem 3.05rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .experience__bg-left {
+  .education__bg-left {
     top: 0;
     left: 0;
     position: absolute;
@@ -100,7 +100,7 @@ export default {
     width: 50%;
     background: #f8f8f8;
   }
-  .experience__bg-right {
+  .education__bg-right {
     top: 0;
     right: 0;
     position: absolute;
@@ -108,28 +108,28 @@ export default {
     width: 50%;
     background: #fcfcfc;
   }
-  .experience__container {
+  .education__container {
     display: flex;
     position: relative;
     z-index: 2;
     max-width: 1276px;
   }
-  .experience__title {
+  .education__title {
     width: 30%;
     border: none;
     text-align: right;
     background: #f8f8f8;
   }
-  .experience__content {
+  .education__content {
     width: 70%;
     background: #fcfcfc;
   }
 }
 @media screen and (min-width: 1200px) {
-  .experience__title {
+  .education__title {
     padding: 4.6rem;
   }
-  .experience__content {
+  .education__content {
     padding: 4.6rem;
   }
 }
