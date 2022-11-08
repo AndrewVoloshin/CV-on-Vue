@@ -9,12 +9,13 @@
       </div>
       <div class="education__content">
         <div class="education__timeline">
+          <!-- <div class="line__start"></div> -->
           <app-timeline
             :item="item"
             v-for="item in education"
             :key="item"
           ></app-timeline>
-          <div class="content__end"></div>
+          <div class="line__end"></div>
         </div>
       </div>
     </div>
@@ -56,14 +57,27 @@ export default {
   margin-bottom: 7px;
 }
 .education__content {
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 0 1.5rem;
 }
 .education__timeline {
   position: relative;
+  border-left: 2px solid #ececec;
+  margin-left: 12px;
+  padding-top: 1.5rem;
 }
-.content__end {
+.line__start {
   position: absolute;
-  left: 5px;
+  left: 12px;
+  top: -24.5px;
+  width: 2px;
+  height: 30px;
+  background: #ececec;
+  /* background: red;
+  z-index: 100; */
+}
+.line__end {
+  position: absolute;
+  left: -9px;
   bottom: 0;
   width: 16px;
   height: 2px;
@@ -87,7 +101,14 @@ export default {
     padding: 2.75rem 3.05rem;
   }
   .education__content {
-    padding: 2.75rem 3.05rem;
+    padding: 0 3.05rem 2.75rem;
+  }
+  .education__timeline {
+    padding-top: 2.75rem;
+  }
+  .line__start {
+    top: -44px;
+    height: 40px;
   }
 }
 
@@ -98,7 +119,7 @@ export default {
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #f8f8f8;
+    background: #fbfbfb;
   }
   .education__bg-right {
     top: 0;
@@ -106,7 +127,7 @@ export default {
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #fcfcfc;
+    background: #fff;
   }
   .education__container {
     display: flex;
@@ -118,11 +139,11 @@ export default {
     width: 30%;
     border: none;
     text-align: right;
-    background: #f8f8f8;
+    background: #fbfbfb;
   }
   .education__content {
     width: 70%;
-    background: #fcfcfc;
+    background: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -130,7 +151,7 @@ export default {
     padding: 4.6rem;
   }
   .education__content {
-    padding: 4.6rem;
+    padding: 0 4.6rem 4.6rem;
   }
 }
 </style>

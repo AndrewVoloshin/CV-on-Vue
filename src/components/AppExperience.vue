@@ -56,10 +56,13 @@ export default {
   margin-bottom: 7px;
 }
 .experience__content {
-  padding: 1.5rem 0 0 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 .experience__timeline {
   position: relative;
+  border-left: 2px solid #ececec;
+  margin-left: 12px;
+  /* padding-bottom: 1rem; */
 }
 .content__end {
   position: absolute;
@@ -87,7 +90,7 @@ export default {
     padding: 2.75rem 3.05rem;
   }
   .experience__content {
-    padding: 2.75rem 3.05rem;
+    padding: 2.75rem 3.05rem 0;
   }
 }
 
@@ -130,7 +133,7 @@ export default {
     padding: 4.6rem;
   }
   .experience__content {
-    padding: 4.6rem;
+    padding: 3.75rem 4.6rem 0;
   }
 }
 </style>
