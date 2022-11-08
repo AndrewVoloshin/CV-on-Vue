@@ -25,8 +25,6 @@ export default {
 .timeline {
   position: relative;
   padding: 0 0 0 1.5rem;
-  /* border-left: 2px solid #ececec; */
-  /* margin-left: 12px; */
   padding-bottom: 2rem;
 }
 

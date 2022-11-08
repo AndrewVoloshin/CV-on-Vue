@@ -9,12 +9,11 @@
       </div>
       <div class="education__content">
         <div class="education__timeline">
-          <!-- <div class="line__start"></div> -->
-          <app-timeline
+          <component-timeline
             :item="item"
             v-for="item in education"
             :key="item"
-          ></app-timeline>
+          ></component-timeline>
           <div class="line__end"></div>
         </div>
       </div>
@@ -24,10 +23,10 @@
 
 <script>
 import { education } from "@/assets/experience.js";
-import AppTimeline from "./AppTimeline.vue";
+import ComponentTimeline from "./ComponentTimeline.vue";
 
 export default {
-  components: { AppTimeline },
+  components: { ComponentTimeline },
   data() {
     return {
       education: education,
@@ -57,7 +56,7 @@ export default {
   margin-bottom: 7px;
 }
 .education__content {
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 1.5rem;
 }
 .education__timeline {
   position: relative;
@@ -72,8 +71,6 @@ export default {
   width: 2px;
   height: 30px;
   background: #ececec;
-  /* background: red;
-  z-index: 100; */
 }
 .line__end {
   position: absolute;
@@ -82,18 +79,6 @@ export default {
   width: 16px;
   height: 2px;
   background: #ececec;
-}
-
-.item__title {
-}
-
-.education__text {
-}
-
-@media screen and (min-width: 600px) {
-  .education__content {
-    /* font-size: 17px; */
-  }
 }
 
 @media screen and (min-width: 760px) {
@@ -151,7 +136,7 @@ export default {
     padding: 4.6rem;
   }
   .education__content {
-    padding: 0 4.6rem 4.6rem;
+    padding: 0 4.6rem 3.75rem;
   }
 }
 </style>

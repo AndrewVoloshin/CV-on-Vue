@@ -1,23 +1,24 @@
 <template>
-  <div class="contacts">
-    <div class="contacts__bg-left"></div>
-    <div class="contacts__bg-right"></div>
-    <div class="contacts__container">
-      <div class="contacts__title">
-        <h2>contacts</h2>
-        <p>Call me, maybe.</p>
+  <div class="portfolio">
+    <div class="portfolio__bg-left"></div>
+    <div class="portfolio__bg-right"></div>
+    <div class="portfolio__container">
+      <div class="portfolio__title">
+        <h2>portfolio</h2>
+        <p>Here it gets interesting.</p>
       </div>
-      <div class="contacts__content">
-        <component-contacts></component-contacts>
+      <div class="portfolio__content">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+        modi explicabo labore ex optio iste, voluptas laborum tempore inventore?
+        Voluptas recusandae molestias aspernatur asperiores fuga! Hic non velit
+        accusantium? Voluptates.
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ComponentContacts from './ComponentContacts.vue';
 export default {
-  components:{ComponentContacts},
   data() {
     return {};
   },
@@ -25,29 +26,29 @@ export default {
 </script>
 
 <style land="scss" scoped>
-.contacts {
+.portfolio {
   display: flex;
   justify-content: center;
   position: relative;
 }
-.contacts__container {
+.portfolio__container {
   width: 100%;
 }
 
-.contacts__title {
+.portfolio__title {
   padding: 1.5rem;
-  background: #fbfbfb;
+  background: #fafafa;
   border-top: solid 1px rgb(237, 237, 237);
   border-bottom: solid 1px rgb(237, 237, 237);
 }
 
-.contacts__title h2 {
+.portfolio__title h2 {
   margin-bottom: 7px;
 }
-.contacts__content {
+.portfolio__content {
   padding: 1.5rem 1.5rem 0;
 }
-.contacts__timeline {
+.portfolio__timeline {
   position: relative;
   border-left: 2px solid #ececec;
   margin-left: 12px;
@@ -62,53 +63,53 @@ export default {
 }
 
 @media screen and (min-width: 760px) {
-  .contacts__title {
+  .portfolio__title {
     padding: 2.75rem 3.05rem;
   }
-  .contacts__content {
+  .portfolio__content {
     padding: 2.75rem 3.05rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .contacts__bg-left {
+  .portfolio__bg-left {
     top: 0;
     left: 0;
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #fbfbfb;
+    background: #f8f8f8;
   }
-  .contacts__bg-right {
+  .portfolio__bg-right {
     top: 0;
     right: 0;
     position: absolute;
     height: 100%;
     width: 50%;
-    background: #fff;
+    background: #fcfcfc;
   }
-  .contacts__container {
+  .portfolio__container {
     display: flex;
     position: relative;
     z-index: 2;
     max-width: 1276px;
   }
-  .contacts__title {
+  .portfolio__title {
     width: 30%;
     border: none;
     text-align: right;
-    background: #fbfbfb;
+    background: #f8f8f8;
   }
-  .contacts__content {
+  .portfolio__content {
     width: 70%;
-    background: #fff;
+    background: #fcfcfc;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts__title {
+  .portfolio__title {
     padding: 4.6rem;
   }
-  .contacts__content {
+  .portfolio__content {
     padding: 3.75rem 4.6rem 0;
   }
 }

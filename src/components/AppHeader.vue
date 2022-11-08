@@ -33,7 +33,7 @@
                     </ul>
                   </div>
                 </div>
-                <app-contacts></app-contacts>
+                <component-contacts></component-contacts>
               </div>
             </div>
           </div>
@@ -44,9 +44,9 @@
 </template>
 
 <script>
-import AppContacts from "@/components/AppContacts.vue";
+import ComponentContacts from './ComponentContacts.vue';
 export default {
-  components: { AppContacts },
+  components: { ComponentContacts },
 };
 </script>
 

@@ -9,12 +9,11 @@
       </div>
       <div class="experience__content">
         <div class="experience__timeline">
-          <app-timeline
+          <component-timeline
             :item="item"
             v-for="item in experience"
             :key="item"
-          ></app-timeline>
-          <!-- <div class="content__end"></div> -->
+          ></component-timeline>
         </div>
       </div>
     </div>
@@ -23,10 +22,10 @@
 
 <script>
 import { experience } from "@/assets/experience.js";
-import AppTimeline from "./AppTimeline.vue";
+import ComponentTimeline from "./ComponentTimeline.vue";
 
 export default {
-  components: { AppTimeline },
+  components: { ComponentTimeline },
   data() {
     return {
       experience: experience,
@@ -62,7 +61,6 @@ export default {
   position: relative;
   border-left: 2px solid #ececec;
   margin-left: 12px;
-  /* padding-bottom: 1rem; */
 }
 .content__end {
   position: absolute;
@@ -71,18 +69,6 @@ export default {
   width: 16px;
   height: 2px;
   background: #ececec;
-}
-
-.item__title {
-}
-
-.experience__text {
-}
-
-@media screen and (min-width: 600px) {
-  .experience__content {
-    /* font-size: 17px; */
-  }
 }
 
 @media screen and (min-width: 760px) {
