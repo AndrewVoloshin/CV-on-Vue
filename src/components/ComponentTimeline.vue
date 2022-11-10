@@ -5,7 +5,6 @@
       <p>{{ item.date }}</p>
       <h3>{{ item.company }}</h3>
       <h4>{{ item.profession }}</h4>
-      
     </div>
     <div class="timeline__text">
       <p>
@@ -21,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .timeline {
   position: relative;
   padding: 0 0 0 1.5rem;

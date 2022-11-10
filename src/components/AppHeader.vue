@@ -20,20 +20,10 @@
                   </h1>
                   <div class="header__subinfo">
                     <h2>Front-end Developer</h2>
-                    <ul class="header__list">
-                      <li class="header__item">
-                        <a
-                          href="https://github.com/AndrewVoloshin"
-                          class="header__link"
-                          target="blank"
-                        >
-                          <font-awesome-icon icon="fa-brands fa-github" />
-                        </a>
-                      </li>
-                    </ul>
+                    <component-social-links />
                   </div>
                 </div>
-                <component-contacts></component-contacts>
+                <component-contacts :displayHr="true" />
               </div>
             </div>
           </div>
@@ -44,9 +34,10 @@
 </template>
 
 <script>
-import ComponentContacts from './ComponentContacts.vue';
+import ComponentContacts from "./ComponentContacts.vue";
+import ComponentSocialLinks from "./ComponentSocialLinks.vue";
 export default {
-  components: { ComponentContacts },
+  components: { ComponentContacts, ComponentSocialLinks },
 };
 </script>
 
@@ -119,28 +110,6 @@ export default {
 
 header__subinfo h2 {
   align-self: center;
-}
-.header__list {
-  display: flex;
-  justify-content: center;
-}
-
-.fa-github {
-  font-size: 25px;
-  color: #c6c6c6;
-  border: 2px solid #f8bb10;
-  padding: 2px;
-  background-color: rgb(237, 237, 237);
-  border-radius: 3px;
-  border: 2px solid rgb(237, 237, 237);
-  text-align: center;
-  transition: all 0.15s linear;
-}
-
-.fa-github:hover {
-  color: #f8bb10;
-  border: 2px solid rgb(237, 237, 237);
-  background: white;
 }
 
 @media screen and (min-width: 600px) {
@@ -237,9 +206,6 @@ header__subinfo h2 {
   }
   .header__subinfo h2 {
     font-size: 21px;
-  }
-  .fa-github {
-    font-size: 31px;
   }
 }
 </style>

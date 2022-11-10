@@ -1,22 +1,25 @@
 <template>
   <div class="contacts">
-    <div class="header__hr"></div>
-    <div class="header__contacts">
-      <div class="contact__item">
+    <div v-if="displayHr" class="header__hr"></div>
+    <div :class="['header__contacts', { 'text__align-start': textAlignStart }]">
+      <div :class="['contact__item', { 'text__align-start': textAlignStart }]">
         <h4>Location</h4>
         <address>Ukraine, Kharkiv</address>
       </div>
-      <div class="contact__item">
+      <div :class="['contact__item', { 'text__align-start': textAlignStart }]">
         <h4>Phone</h4>
         <p>+38(099)111-51-91</p>
       </div>
-      <div class="contact__item">
-        <a href="#" class="contact__link">
+      <div :class="['contact__item', { 'text__align-start': textAlignStart }]">
+        <a
+          href="#"
+          :class="['contact__link', { 'text__align-start': textAlignStart }]"
+        >
           <h4>Web</h4>
           <p>youtube.com</p>
         </a>
       </div>
-      <div class="contact__item">
+      <div :class="['contact__item', { 'text__align-start': textAlignStart }]">
         <h4>Email</h4>
         <p>VoloshinAndy@gmail.com</p>
       </div>
@@ -25,7 +28,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["displayHr", "textAlignStart"],
+};
 </script>
 
 <style lang="scss" scoped>
@@ -65,6 +70,11 @@ export default {};
     color: #f8bb10;
   }
 }
+
+.text__align-start {
+  align-items: flex-start;
+}
+
 @media screen and (min-width: 600px) {
   .header__contacts {
     width: 100%;
@@ -88,8 +98,5 @@ export default {};
   .contact__link {
     align-items: flex-start;
   }
-}
-@media screen and (min-width: 1024px) {
-   
 }
 </style>

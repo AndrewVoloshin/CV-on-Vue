@@ -1,23 +1,34 @@
 <template>
-  <div class="contacts">
-    <div class="contacts__bg-left"></div>
-    <div class="contacts__bg-right"></div>
-    <div class="contacts__container">
-      <div class="contacts__title">
-        <h2>contacts</h2>
+  <div class="footer">
+    <div class="footer__bg-left"></div>
+    <div class="footer__bg-right"></div>
+    <div class="footer__container">
+      <div class="footer__title">
+        <h2>Contacts</h2>
         <p>Call me, maybe.</p>
       </div>
-      <div class="contacts__content">
-        <component-contacts></component-contacts>
+      <div class="footer__content">
+        <component-contacts class="footer" :textAlignStart="true" />
+        <div class="footer__hr"></div>
+
+        <div class="header__info">
+          <h1>
+            <span class="firstname">Andrew</span>
+            <span class="lastname">Voloshin</span>
+          </h1>
+
+          <component-social-links />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ComponentContacts from './ComponentContacts.vue';
+import ComponentContacts from "./ComponentContacts.vue";
+import ComponentSocialLinks from "./ComponentSocialLinks.vue";
 export default {
-  components:{ComponentContacts},
+  components: { ComponentContacts, ComponentSocialLinks },
   data() {
     return {};
   },
@@ -25,29 +36,29 @@ export default {
 </script>
 
 <style land="scss" scoped>
-.contacts {
+.footer {
   display: flex;
-  justify-content: center;
   position: relative;
+  justify-content: center;
 }
-.contacts__container {
+.footer__container {
   width: 100%;
 }
 
-.contacts__title {
+.footer__title {
   padding: 1.5rem;
   background: #fbfbfb;
   border-top: solid 1px rgb(237, 237, 237);
   border-bottom: solid 1px rgb(237, 237, 237);
 }
 
-.contacts__title h2 {
+.footer__title h2 {
   margin-bottom: 7px;
 }
-.contacts__content {
+.footer__content {
   padding: 1.5rem 1.5rem 0;
 }
-.contacts__timeline {
+.footer__timeline {
   position: relative;
   border-left: 2px solid #ececec;
   margin-left: 12px;
@@ -60,18 +71,29 @@ export default {
   height: 2px;
   background: #ececec;
 }
+.footer__hr {
+  height: 2px;
+  width: 100%;
+  background: #ededed;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 600px) {
+  .footer__hr {
+    margin-bottom: 5.5rem;
+  }
+}
 
 @media screen and (min-width: 760px) {
-  .contacts__title {
+  .footer__title {
     padding: 2.75rem 3.05rem;
   }
-  .contacts__content {
+  .footer__content {
     padding: 2.75rem 3.05rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .contacts__bg-left {
+  .footer__bg-left {
     top: 0;
     left: 0;
     position: absolute;
@@ -79,7 +101,7 @@ export default {
     width: 50%;
     background: #fbfbfb;
   }
-  .contacts__bg-right {
+  .footer__bg-right {
     top: 0;
     right: 0;
     position: absolute;
@@ -87,29 +109,32 @@ export default {
     width: 50%;
     background: #fff;
   }
-  .contacts__container {
+  .footer__container {
     display: flex;
     position: relative;
     z-index: 2;
     max-width: 1276px;
   }
-  .contacts__title {
+  .footer__title {
     width: 30%;
     border: none;
     text-align: right;
     background: #fbfbfb;
   }
-  .contacts__content {
+  .footer__content {
     width: 70%;
     background: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts__title {
+  .footer__title {
     padding: 4.6rem;
   }
-  .contacts__content {
+  .footer__content {
     padding: 3.75rem 4.6rem 0;
+  }
+  .footer__hr {
+    margin-bottom: 7.65rem;
   }
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <app-header> </app-header>
-    <app-intro> </app-intro>
-    <app-skills> </app-skills>
-    <app-experience> </app-experience>
-    <app-education> </app-education>
-    <app-portfolio></app-portfolio>
-    <app-contacts></app-contacts>
+    <app-header />
+    <app-intro />
+    <app-skills />
+    <app-experience />
+    <app-education />
+    <app-portfolio />
+    <app-footer />
   </div>
 </template>
 
@@ -17,7 +17,7 @@ import AppSkills from "@/components/AppSkills.vue";
 import AppExperience from "@/components/AppExperience.vue";
 import AppEducation from "@/components/AppEducation.vue";
 import AppPortfolio from "@/components/AppPortfolio.vue";
-import AppContacts from "@/components/AppContacts.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   name: "Home",
@@ -28,7 +28,7 @@ export default {
     AppExperience,
     AppEducation,
     AppPortfolio,
-    AppContacts,
+    AppFooter,
   },
 };
 </script>
