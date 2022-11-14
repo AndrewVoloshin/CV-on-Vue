@@ -9,11 +9,10 @@
       </div>
       <div class="footer__content">
         <component-contacts class="contacts" />
-        <!-- <component-contacts /> -->
         <div class="footer__hr"></div>
-        <div class="header__info">
-          <component-brand />
-          <component-social-links />
+        <div class="footer__info">
+          <component-brand class="brand" />
+          <component-social-links class="social__links" />
         </div>
       </div>
     </div>
@@ -33,9 +32,6 @@ export default {
 </script>
 
 <style land="scss" scoped>
-.brandhere {
-  text-align: left !important;
-}
 .footer {
   display: flex;
   position: relative;
@@ -77,12 +73,28 @@ export default {
   background: #ededed;
   margin-bottom: 3rem;
 }
+.footer__info {
+  position: relative;
+}
 .contacts {
   text-align: left;
+}
+
+.social__links {
+  justify-content: flex-start;
+}
+
+.brand {
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 600px) {
   .footer__hr {
     margin-bottom: 5.5rem;
+  }
+  .social__links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 

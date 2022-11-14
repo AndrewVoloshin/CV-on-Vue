@@ -9,6 +9,13 @@
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
+        <a
+          href="https://github.com/AndrewVoloshin"
+          class="header__link"
+          target="blank"
+        >
+          <font-awesome-icon icon="fa-brands fa-github" />
+        </a>
       </li>
     </ul>
   </div>
@@ -19,7 +26,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.social__list {
+.social__links {
   display: flex;
   justify-content: center;
 }

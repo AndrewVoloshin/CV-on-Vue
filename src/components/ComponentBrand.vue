@@ -12,8 +12,13 @@ export default {};
 </script>
 
 <style scoped>
-h1 {
-  text-align: center;
+.brand {
+  font-size: 44px;
+}
+
+.brand h1 {
+  font-size: 1em;
+  line-height: 0.91;
 }
 
 .firstname {
@@ -32,9 +37,5 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .brand h1 {
-    font-size: 67px;
-  }
-}
+
 </style>

@@ -35,10 +35,10 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 44px;
-  line-height: 0.91;
-}
+// h1 {
+//   font-size: 44px;
+//   line-height: 0.91;
+// }
 
 h2 {
   color: #727272;

@@ -14,7 +14,7 @@
             <div class="header__content-wrap">
               <div class="header__content">
                 <div class="header__info">
-                  <component-brand />
+                  <component-brand class="brand" />
                   <div class="header__subinfo">
                     <h2>Front-end Developer</h2>
                     <component-social-links />
@@ -66,7 +66,6 @@ export default {
   display: block;
   width: 154px;
   height: 154px;
-  background-color: yellow;
   border-radius: 50%;
 }
 
@@ -102,8 +101,11 @@ export default {
   padding: 20px 0;
 }
 
-header__subinfo h2 {
+.header__subinfo h2 {
   align-self: center;
+}
+.brand {
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -196,6 +198,9 @@ header__subinfo h2 {
 
   .header__subinfo h2 {
     font-size: 21px;
+  }
+  .brand {
+    font-size: 67px;
   }
 }
 </style>
