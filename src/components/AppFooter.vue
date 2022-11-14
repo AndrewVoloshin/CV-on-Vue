@@ -8,7 +8,7 @@
         <p>Call me, maybe.</p>
       </div>
       <div class="footer__content">
-        <component-contacts :textAlignStart="true"  />
+        <component-contacts class="contacts" />
         <!-- <component-contacts /> -->
         <div class="footer__hr"></div>
         <div class="header__info">
@@ -76,6 +76,9 @@ export default {
   width: 100%;
   background: #ededed;
   margin-bottom: 3rem;
+}
+.contacts {
+  text-align: left;
 }
 @media screen and (min-width: 600px) {
   .footer__hr {
