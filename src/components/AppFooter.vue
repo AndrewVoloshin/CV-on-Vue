@@ -8,15 +8,11 @@
         <p>Call me, maybe.</p>
       </div>
       <div class="footer__content">
-        <component-contacts class="footer" :textAlignStart="true" />
+        <component-contacts :textAlignStart="true"  />
+        <!-- <component-contacts /> -->
         <div class="footer__hr"></div>
-
         <div class="header__info">
-          <h1>
-            <span class="firstname">Andrew</span>
-            <span class="lastname">Voloshin</span>
-          </h1>
-
+          <component-brand />
           <component-social-links />
         </div>
       </div>
@@ -25,10 +21,11 @@
 </template>
 
 <script>
+import ComponentBrand from "./ComponentBrand.vue";
 import ComponentContacts from "./ComponentContacts.vue";
 import ComponentSocialLinks from "./ComponentSocialLinks.vue";
 export default {
-  components: { ComponentContacts, ComponentSocialLinks },
+  components: { ComponentContacts, ComponentSocialLinks, ComponentBrand },
   data() {
     return {};
   },
@@ -36,6 +33,9 @@ export default {
 </script>
 
 <style land="scss" scoped>
+.brandhere {
+  text-align: left !important;
+}
 .footer {
   display: flex;
   position: relative;

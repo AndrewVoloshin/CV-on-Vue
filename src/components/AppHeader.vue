@@ -14,10 +14,7 @@
             <div class="header__content-wrap">
               <div class="header__content">
                 <div class="header__info">
-                  <h1>
-                    <span class="firstname">Andrew</span>
-                    <span class="lastname">Voloshin</span>
-                  </h1>
+                  <component-brand />
                   <div class="header__subinfo">
                     <h2>Front-end Developer</h2>
                     <component-social-links />
@@ -34,10 +31,11 @@
 </template>
 
 <script>
+import ComponentBrand from "./ComponentBrand.vue";
 import ComponentContacts from "./ComponentContacts.vue";
 import ComponentSocialLinks from "./ComponentSocialLinks.vue";
 export default {
-  components: { ComponentContacts, ComponentSocialLinks },
+  components: { ComponentContacts, ComponentSocialLinks, ComponentBrand },
 };
 </script>
 
@@ -82,10 +80,6 @@ export default {
 
 .header__info {
   margin-bottom: 24.5px;
-}
-
-.header__info h1 {
-  text-align: center;
 }
 
 .firstname {
@@ -171,9 +165,7 @@ header__subinfo h2 {
     justify-content: center;
     height: 100%;
   }
-  .header__info h1 {
-    text-align: left;
-  }
+
   .header__subinfo h2 {
     text-align: left;
   }
@@ -201,9 +193,7 @@ header__subinfo h2 {
   .header__content-wrap {
     padding: 3rem 4.6rem 1.6rem;
   }
-  .header__info h1 {
-    font-size: 67px;
-  }
+
   .header__subinfo h2 {
     font-size: 21px;
   }
