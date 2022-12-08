@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { education } from "@/assets/experience.js";
+import { education } from "@/assets/contentText.js";
 import ComponentTimeline from "./ComponentTimeline.vue";
 
 export default {

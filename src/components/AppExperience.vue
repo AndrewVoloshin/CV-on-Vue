@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { experience } from "@/assets/experience.js";
+import { experience } from "@/assets/contentText.js";
 import ComponentTimeline from "./ComponentTimeline.vue";
 
 export default {

@@ -8,7 +8,7 @@
     </div>
     <div class="timeline__text">
       <p>
-        {{ item.describe }}
+        <pre> {{ item.describe }}</pre>
       </p>
     </div>
   </div>
@@ -63,6 +63,7 @@ export default {
   }
   .item__title {
     width: 42%;
+    margin-right: 49px;
   }
   .timeline__text {
     width: 58%;

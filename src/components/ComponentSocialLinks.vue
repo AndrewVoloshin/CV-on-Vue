@@ -9,13 +9,6 @@
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
-        <a
-          href="https://github.com/AndrewVoloshin"
-          class="header__link"
-          target="blank"
-        >
-          <font-awesome-icon icon="fa-brands fa-github" />
-        </a>
       </li>
     </ul>
   </div>
@@ -47,6 +40,11 @@ export default {};
   color: #f8bb10;
   border: 2px solid rgb(237, 237, 237);
   background: white;
+}
+.header__link {
+  display: block;
+  width: 33px;
+  height: 33px;
 }
 
 @media screen and (min-width: 1200px) {

@@ -10,12 +10,15 @@
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
-#app {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+#app,
+pre {
+  // font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #939393;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.75;
+  word-wrap: break-word;
 }
 
 * {

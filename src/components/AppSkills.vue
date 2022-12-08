@@ -8,14 +8,23 @@
         <p>What I am all about</p>
       </div>
       <p class="skills__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis -->
+        <pre> {{ relevantExperience.text }}</pre>
+       <!-- {{ relevantExperience.text }} -->
       </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import {relevantExperience} from "@/assets/contentText.js";
+export default {
+  data() {
+    return {
+      relevantExperience: relevantExperience,
+    };
+  },
+};
 </script>
 
 <style land="scss" scoped>
@@ -39,7 +48,7 @@ export default {};
   margin-bottom: 7px;
 }
 .skills__text {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -53,7 +62,7 @@ export default {};
     padding: 2.75rem 3.05rem;
   }
   .skills__text {
-    padding: 2.75rem 3.05rem;
+    padding: 2.75rem 3.05rem 0;
   }
   @media screen and (min-width: 1024px) {
     .skills__bg-left {
