@@ -4,8 +4,8 @@
     <div class="experience__bg-right"></div>
     <div class="experience__container">
       <div class="experience__title">
-        <h2>experience</h2>
-        <p>What I am all about</p>
+        <h2>досвід</h2>
+        <!-- <p>What I am all about</p> -->
       </div>
       <div class="experience__content">
         <div class="experience__timeline">

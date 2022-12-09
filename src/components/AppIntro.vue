@@ -4,11 +4,12 @@
     <div class="intro__bg-right"></div>
     <div class="intro__container">
       <div class="intro__content">
-        <h2>intro</h2>
-        <p>What I am all about</p>
+        <h2>Про себе</h2>
+        <!-- <p>What I am all about</p> -->
       </div>
       <p class="intro__text">
-        {{ intro.text }}
+        <pre> {{ intro.text }}</pre>
+       
       </p>
     </div>
   </div>

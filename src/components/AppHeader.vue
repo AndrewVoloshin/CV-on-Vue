@@ -15,7 +15,7 @@
               <div class="header__content">
                 <div class="header__info">
                   <component-brand class="brand" />
-                  <div class="header__subinfo">
+                  <div class="header__subinfo" v-if="false">
                     <h2>Front-end Developer</h2>
                     <component-social-links />
                   </div>

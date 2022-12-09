@@ -4,8 +4,8 @@
     <div class="skills__bg-right"></div>
     <div class="skills__container">
       <div class="skills__content">
-        <h2>skills</h2>
-        <p>What I am all about</p>
+        <h2>релевантний досвід</h2>
+        <!-- <p>What I am all about</p> -->
       </div>
       <p class="skills__text">
         <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis -->
@@ -50,11 +50,14 @@ export default {
 .skills__text {
   padding: 1.5rem 1.5rem 0;
 }
+ 
 
 @media screen and (min-width: 600px) {
   .skills__text {
     font-size: 17px;
   }
+
+
 }
 
 @media screen and (min-width: 760px) {

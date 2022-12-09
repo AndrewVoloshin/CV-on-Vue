@@ -1,8 +1,8 @@
 <template>
   <div class="brand">
     <h1>
-      <span class="firstname">Andrew</span>
-      <span class="lastname">Voloshin</span>
+      <span class="firstname">Андрій</span>
+      <span class="lastname">Волошин</span>
     </h1>
   </div>
 </template>

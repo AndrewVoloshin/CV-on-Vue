@@ -5,6 +5,7 @@
     <app-skills />
     <app-experience />
     <app-education />
+    <!-- <app-intro  /> -->
     <!-- <app-portfolio /> -->
     <!-- <app-footer /> -->
   </div>

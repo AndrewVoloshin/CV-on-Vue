@@ -3,21 +3,21 @@
     <div v-if="displayHr" class="header__hr"></div>
     <div class="contacts__content">
       <div class="contact__item">
-        <h4>Location</h4>
-        <address>Ukraine, Kharkiv</address>
+        <h4>Місто</h4>
+        <address>Україна, м.Харків</address>
       </div>
       <div class="contact__item">
-        <h4>Phone</h4>
+        <h4>Телефон</h4>
         <p>+38(099)111-51-91</p>
       </div>
-      <div class="contact__item">
+      <!-- <div class="contact__item">
         <a href="#" class="contact__link">
           <h4>Web</h4>
           <p>youtube.com</p>
         </a>
-      </div>
+      </div> -->
       <div class="contact__item">
-        <h4>Email</h4>
+        <h4>Почта</h4>
         <p>VoloshinAndy@gmail.com</p>
       </div>
     </div>
@@ -86,6 +86,7 @@ export default {
   }
   .contact__item {
     width: 25%;
+    width: 33%;
     align-items: flex-start;
     text-align: left;
   }

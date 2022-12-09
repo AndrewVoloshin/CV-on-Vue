@@ -4,8 +4,8 @@
     <div class="education__bg-right"></div>
     <div class="education__container">
       <div class="education__title">
-        <h2>education</h2>
-        <p>What I am all about</p>
+        <h2>Освіта</h2>
+        <!-- <p>What I am all about</p> -->
       </div>
       <div class="education__content">
         <div class="education__timeline">
