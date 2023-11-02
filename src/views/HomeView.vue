@@ -20,7 +20,7 @@ import AppPortfolio from "@/components/AppPortfolio.vue";
 import AppFooter from "@/components/AppFooter.vue";
 
 export default {
-  name: "Home",
+  name: "HomeView",
   components: {
     AppHeader,
     AppIntro,
