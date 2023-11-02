@@ -12,7 +12,7 @@
           <component-timeline
             :item="item"
             v-for="item in education"
-            :key="item"
+            :key="item.id"
           ></component-timeline>
           <div class="line__end"></div>
         </div>

@@ -12,8 +12,9 @@
           <component-timeline
             :item="item"
             v-for="item in experience"
-            :key="item"
-          ></component-timeline>
+            :key="item.id"
+          >
+          </component-timeline>
         </div>
       </div>
     </div>
