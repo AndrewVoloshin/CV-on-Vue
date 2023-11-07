@@ -4,14 +4,14 @@
       <li class="social__item">
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link"
+          class="header__link start-move"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link"
+          class="header__link start-move"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
@@ -26,6 +26,16 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.start-move {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.7s;
+}
+.move {
+  opacity: 1;
+  bottom: 0px;
+}
 .social__links {
   display: flex;
   justify-content: center;

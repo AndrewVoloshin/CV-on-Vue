@@ -1,14 +1,20 @@
 <template>
   <div class="header">
     <div class="header__bg"></div>
-
+    <div v-if="isLoading" class="loader">
+      <div class="spinner"></div>
+    </div>
     <div class="cv__container">
       <div class="cv__content">
         <header>
           <div class="header__top">
             <div class="header__photo-wrap">
               <div class="header__photo">
-                <img src="@/assets/HeaderPhoto.jpg" alt="my photo" />
+                <img
+                  src="@/assets/HeaderPhoto.jpg"
+                  class="start-move"
+                  alt="my photo"
+                />
               </div>
             </div>
             <div class="header__content-wrap">
@@ -16,7 +22,7 @@
                 <div class="header__info">
                   <component-brand class="brand" />
                   <div class="header__subinfo">
-                    <h2>Front-end Developer</h2>
+                    <h2 class="start-move">Front-end Developer</h2>
                     <component-social-links />
                   </div>
                 </div>
@@ -34,12 +40,76 @@
 import ComponentBrand from "./ComponentBrand.vue";
 import ComponentContacts from "./ComponentContacts.vue";
 import ComponentSocialLinks from "./ComponentSocialLinks.vue";
+
 export default {
   components: { ComponentContacts, ComponentSocialLinks, ComponentBrand },
+  data() {
+    return {
+      isLoading: false,
+    };
+  },
+  mounted() {
+    // setTimeout(() => {
+    //   this.isLoading = false
+    //   }, 1000);
+    //       const img = document.querySelector(".header__photo1");
+    //   setTimeout(() => {
+    //     img.classList.add("header__photo2");
+    //   }, 1000);
+    // window.onload = () => {
+    //   this.isLoading = false
+    //   console.log("Страница загружена");
+    //   const img = document.querySelector(".header__photo1");
+    //   setTimeout(() => {
+    //     img.classList.add("header__photo2");
+    //   }, 1000);
+    // };
+  },
+  methods: {
+    onPageFullyLoaded() {
+      // Срабатывает после полной загрузки страницы, включая изображения
+      this.isLoading = false; // Скрыть индикатор загрузки
+      const img = document.querySelector(".header__photo1");
+
+      setTimeout(() => {
+        img.classList.add("header__photo2");
+      }, 0);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #f8bb10;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .cv__container {
   display: flex;
   justify-content: center;
@@ -67,6 +137,17 @@ export default {
   width: 154px;
   height: 154px;
   border-radius: 50%;
+}
+
+.start-move {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.7s;
+}
+.move {
+  opacity: 1;
+  bottom: 0px;
 }
 
 .header__content-wrap {
