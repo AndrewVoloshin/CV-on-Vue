@@ -4,14 +4,14 @@
       <li class="social__item">
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link start-move"
+          :class="['header__link', { 'start-move': displayAnim }]"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link start-move"
+          :class="['header__link', { 'start-move': displayAnim }]"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
@@ -22,7 +22,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["displayAnim"],
+};
 </script>
 
 <style lang="scss" scoped>

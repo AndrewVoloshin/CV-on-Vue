@@ -20,13 +20,13 @@
             <div class="header__content-wrap">
               <div class="header__content">
                 <div class="header__info">
-                  <component-brand class="brand" />
+                  <component-brand class="brand" :displayAnim="true" />
                   <div class="header__subinfo">
                     <h2 class="start-move">Front-end Developer</h2>
-                    <component-social-links />
+                    <component-social-links :displayAnim="true" />
                   </div>
                 </div>
-                <component-contacts :displayHr="true" />
+                <component-contacts :displayHr="true" :displayAnim="true" />
               </div>
             </div>
           </div>

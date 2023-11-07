@@ -11,7 +11,7 @@
         <component-contacts class="contacts" />
         <div class="footer__hr"></div>
         <div class="footer__info">
-          <component-brand class="brand" />
+          <component-brand class="brand" :display="false" />
           <component-social-links class="social__links" />
         </div>
       </div>
