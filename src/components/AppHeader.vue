@@ -225,7 +225,7 @@ export default {
   }
   .header__photo-wrap {
     width: 30%;
-    height: 100vh;
+    height: 50vh;
     padding: 0 3.05rem;
     display: flex;
     justify-content: center;
@@ -238,7 +238,7 @@ export default {
   .header__content-wrap {
     width: 70%;
     padding: 3.05rem 3.05rem 1.6rem;
-    height: 100vh;
+    height: 50vh;
   }
 
   .header__content {
