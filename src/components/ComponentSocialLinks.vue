@@ -4,14 +4,16 @@
       <li class="social__item">
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link"
+          :class="['header__link', { 'start-move': displayAnim }]"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
+      </li>
+      <li class="social__item">
         <a
           href="https://github.com/AndrewVoloshin"
-          class="header__link"
+          :class="['header__link', { 'start-move': displayAnim }]"
           target="blank"
         >
           <font-awesome-icon icon="fa-brands fa-github" />
@@ -22,10 +24,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["displayAnim"],
+};
 </script>
 
 <style lang="scss" scoped>
+.start-move {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.7s;
+}
+.move {
+  opacity: 1;
+  bottom: 0px;
+}
+
+.social__list {
+  display: flex;
+  & :last-child {
+    margin-right: 0px;
+  }
+}
 .social__links {
   display: flex;
   justify-content: center;
@@ -47,6 +68,11 @@ export default {};
   color: #f8bb10;
   border: 2px solid rgb(237, 237, 237);
   background: white;
+}
+
+.social__item {
+  margin-right: 6px;
+ 
 }
 
 @media screen and (min-width: 1200px) {

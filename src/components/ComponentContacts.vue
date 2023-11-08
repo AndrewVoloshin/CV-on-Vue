@@ -1,22 +1,25 @@
 <template>
   <div class="contacts">
-    <div v-if="displayHr" class="header__hr"></div>
+    <div
+      v-if="displayHr"
+      :class="['header__hr', { 'start-move': displayAnim }]"
+    ></div>
     <div class="contacts__content">
-      <div class="contact__item">
+      <div :class="['contact__item', { 'start-move': displayAnim }]">
         <h4>Location</h4>
         <address>Ukraine, Kharkiv</address>
       </div>
-      <div class="contact__item">
+      <div :class="['contact__item', { 'start-move': displayAnim }]">
         <h4>Phone</h4>
         <p>+38(099)111-51-91</p>
       </div>
-      <div class="contact__item">
+      <div :class="['contact__item', { 'start-move': displayAnim }]">
         <a href="#" class="contact__link">
           <h4>Web</h4>
           <p>youtube.com</p>
         </a>
       </div>
-      <div class="contact__item">
+      <div :class="['contact__item', { 'start-move': displayAnim }]">
         <h4>Email</h4>
         <p>VoloshinAndy@gmail.com</p>
       </div>
@@ -26,7 +29,10 @@
 
 <script>
 export default {
-  props: ["displayHr"],
+  props: ["displayHr", "displayAnim"],
+  data() {
+    return {};
+  },
 };
 </script>
 
@@ -66,6 +72,17 @@ export default {
 
 .text__align-start {
   align-items: flex-start;
+}
+
+.start-move {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.7s;
+}
+.move {
+  opacity: 1;
+  bottom: 0px;
 }
 
 @media screen and (min-width: 600px) {

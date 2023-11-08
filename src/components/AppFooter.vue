@@ -11,7 +11,7 @@
         <component-contacts class="contacts" />
         <div class="footer__hr"></div>
         <div class="footer__info">
-          <component-brand class="brand" />
+          <component-brand class="brand" :display="false" />
           <component-social-links class="social__links" />
         </div>
       </div>
@@ -46,6 +46,10 @@ export default {
   background: #fbfbfb;
   border-top: solid 1px rgb(237, 237, 237);
   border-bottom: solid 1px rgb(237, 237, 237);
+}
+
+.footer__info {
+  padding-bottom: 1.5rem;
 }
 
 .footer__title h2 {
@@ -85,7 +89,7 @@ export default {
 }
 
 .brand {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
 }
 @media screen and (min-width: 600px) {
   .footer__hr {
@@ -94,7 +98,10 @@ export default {
   .social__links {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 21px;
+  }
+  .brand {
+    margin-bottom: 0rem;
   }
 }
 
@@ -104,6 +111,9 @@ export default {
   }
   .footer__content {
     padding: 2.75rem 3.05rem 0;
+  }
+  .footer__info {
+    margin-bottom: 3.05rem;
   }
 }
 

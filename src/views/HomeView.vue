@@ -30,5 +30,25 @@ export default {
     AppPortfolio,
     AppFooter,
   },
+  data(){
+    return{
+
+    }
+  },
+  mounted(){
+    document.querySelectorAll(".start-move").forEach((el, indx) => {
+      setTimeout(() => {
+        el.classList.add("move");
+      }, 1000 + indx * 200);
+    });
+
+  }
 };
 </script>
+
+<style lang="scss" scoped>
+
+
+
+
+</style>

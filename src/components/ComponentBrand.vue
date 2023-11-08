@@ -1,17 +1,32 @@
 <template>
   <div class="brand">
     <h1>
-      <span class="firstname">Andrew</span>
-      <span class="lastname">Voloshin</span>
+      <span :class="['firstname', { 'start-move': displayAnim }]">Andrew</span>
+      <span :class="['lastname', { 'start-move': displayAnim }]">Voloshin</span>
     </h1>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["displayAnim"],
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>
+.start-move {
+  opacity: 0;
+  position: relative;
+  bottom: -20px;
+  transition: all 0.7s;
+}
+.move {
+  opacity: 1;
+  bottom: 0px;
+}
 .brand {
   font-size: 44px;
 }
@@ -36,6 +51,4 @@ export default {};
     text-align: left;
   }
 }
-
-
 </style>
