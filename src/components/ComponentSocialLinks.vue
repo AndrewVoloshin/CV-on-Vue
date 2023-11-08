@@ -9,6 +9,8 @@
         >
           <font-awesome-icon icon="fa-brands fa-github" />
         </a>
+      </li>
+      <li class="social__item">
         <a
           href="https://github.com/AndrewVoloshin"
           :class="['header__link', { 'start-move': displayAnim }]"
@@ -38,6 +40,13 @@ export default {
   opacity: 1;
   bottom: 0px;
 }
+
+.social__list {
+  display: flex;
+  & :last-child {
+    margin-right: 0px;
+  }
+}
 .social__links {
   display: flex;
   justify-content: center;
@@ -59,6 +68,11 @@ export default {
   color: #f8bb10;
   border: 2px solid rgb(237, 237, 237);
   background: white;
+}
+
+.social__item {
+  margin-right: 6px;
+ 
 }
 
 @media screen and (min-width: 1200px) {
