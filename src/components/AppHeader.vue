@@ -206,7 +206,7 @@ export default {
   .header__bg {
     position: absolute;
     width: 50%;
-    height: 100%;
+    height: 50vh;
     background: #fbfbfb;
     z-index: 1;
   }
