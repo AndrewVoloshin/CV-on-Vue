@@ -207,7 +207,7 @@ export default {
     position: absolute;
     width: 50%;
     height: 50vh;
-    background: #fbfbfb;
+    background: var(--sub-bg-color);
     z-index: 1;
   }
   .cv__content {
@@ -215,7 +215,7 @@ export default {
     max-width: 1276px;
     padding: 0;
     z-index: 2;
-    background: white;
+    background: var(--main-bg-color);
   }
 
   .header__top {

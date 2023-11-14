@@ -7,6 +7,7 @@
     <app-education />
     <app-portfolio />
     <app-footer />
+    <toggle-dark-light />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import AppExperience from "@/components/AppExperience.vue";
 import AppEducation from "@/components/AppEducation.vue";
 import AppPortfolio from "@/components/AppPortfolio.vue";
 import AppFooter from "@/components/AppFooter.vue";
+import ToggleDarkLight from "@/components/ToggleDarkLight.vue";
 
 export default {
   name: "HomeView",
@@ -29,26 +31,27 @@ export default {
     AppEducation,
     AppPortfolio,
     AppFooter,
+    ToggleDarkLight,
   },
-  data(){
-    return{
-
-    }
+  data() {
+    return {};
   },
-  mounted(){
+  mounted() {
     document.querySelectorAll(".start-move").forEach((el, indx) => {
       setTimeout(() => {
         el.classList.add("move");
       }, 1000 + indx * 200);
     });
-
-  }
+  },
 };
 </script>
 
-<style lang="scss" scoped>
-
-
-
-
+<style lang="scss">
+:root {
+  --main-bg-color: white;
+  // --main-bg-color: red;
+  --sub-bg-color: #fbfbfb;
+  // --sub-bg-color: blue;
+  --main-text-color: #939393;
+}
 </style>
